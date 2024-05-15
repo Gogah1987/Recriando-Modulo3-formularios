@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,
+input,
+label {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 436px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  width: 417px;
+  color: #ffffff;
+
+  margin-top: 140px;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+header p {
+  font-size: 20px;
+  margin-top: 18px;
+}
+
+form {
+  margin-top: 58px;
+  background: #ffffff;
+
+  min-height: 300px;
+  border-radius: 20px 20px 0 0;
+
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+
+footer {
+  height: 160px;
+  background: #535971;
+  border-radius: 0 0 20px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer button {
+  width: 608px;
+  height: 56px;
+  background: #ff5374;
+  border-radius: 20px;
+  border: none;
+
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 26px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: #535971;
+  line-height: 34px;
+
+  width: 100%;
+  padding-bottom: 6px;
+
+  border-bottom: 1px solid #E6E6F0;
+}
+
+.container {
+  margin-top: 32px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 16px 22px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Nome Sobrenome"
+    "Email Email"
+    "Senha Senha";
+
+  font-size: 14px;
+  color: #4E4958;
+  line-height: 24px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+input {
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+
+  padding: 0px 16px;
+
+  font-size: 16px;
+  color: #4E4958;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+.legendLabel {
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 7px;
+  color: #C1BCCC;
+}
+
+.legendLabel:hover {
+  color: #6d6b72;
+}
+
+.Nome {
+  grid-area: Nome;
+}
+
+.Sobrenome {
+  grid-area: Sobrenome;
+}
+
+.Email {
+  grid-area: Email;
+}
+
+.Senha {
+  grid-area: Senha;
+}
+
+.NomeMentor {
+  margin-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 14px;
+  color: #4E4958;
+  line-height: 24px;
+}
+
+.legendContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-top: 32px;
+}
+
+.subLegend {
+  font-size: 20px;
+  line-height: 34px;
+  border: none;
+}
+
+.MentoriaDate {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Date Horarios";
+}
+
+.Date {
+  grid-area: Date;
+}
+
+.Horarios {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  grid-area: Horarios;
+
+  input {
+    width: 140px;
+  }
+}
+
+.MentoriaDate {
+  gap: 32px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
